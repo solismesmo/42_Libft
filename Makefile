@@ -41,7 +41,7 @@ CFLAGS		= -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(OBJECTS):%.o:%.c
+%.o:%.c
 			${CC} ${CFLAGS} -c $< -o $@
 
 $(NAME): ${OBJECTS}
