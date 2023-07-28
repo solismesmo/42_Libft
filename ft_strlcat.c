@@ -1,33 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/24 22:24:10 by livieira          #+#    #+#             */
-/*   Updated: 2023/07/26 20:44:12 by livieira         ###   ########.fr       */
+/*   Created: 2023/07/27 22:41:12 by livieira          #+#    #+#             */
+/*   Updated: 2023/07/27 22:41:40 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	int	sign;
-	int	result;
-
-	sign = 1;
-	result = 0;
-	while (*nptr == '\t' || *nptr == '\r' || *nptr == ' ' || *nptr == '\n')
-		nptr++;
-	if (*nptr == '+' || *nptr == '-')
-		if (*nptr++ == '-')
-			sign *= -1;
-	while (*nptr >= '0' && *nptr <= '9')
-	{
-		result = (*nptr - '0') + (result * 10);
-		nptr++;
-	}
-	return (result * sign);
+	
 }

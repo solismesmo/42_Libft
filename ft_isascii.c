@@ -1,33 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/24 22:24:10 by livieira          #+#    #+#             */
-/*   Updated: 2023/07/26 20:44:12 by livieira         ###   ########.fr       */
+/*   Created: 2023/07/26 20:48:46 by livieira          #+#    #+#             */
+/*   Updated: 2023/07/26 20:52:11 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+int	ft_isascii(int c)
 {
-	int	sign;
-	int	result;
-
-	sign = 1;
-	result = 0;
-	while (*nptr == '\t' || *nptr == '\r' || *nptr == ' ' || *nptr == '\n')
-		nptr++;
-	if (*nptr == '+' || *nptr == '-')
-		if (*nptr++ == '-')
-			sign *= -1;
-	while (*nptr >= '0' && *nptr <= '9')
-	{
-		result = (*nptr - '0') + (result * 10);
-		nptr++;
-	}
-	return (result * sign);
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }

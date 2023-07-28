@@ -1,33 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/24 22:24:10 by livieira          #+#    #+#             */
-/*   Updated: 2023/07/26 20:44:12 by livieira         ###   ########.fr       */
+/*   Created: 2023/07/27 22:33:52 by livieira          #+#    #+#             */
+/*   Updated: 2023/07/27 22:38:06 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+int	ft_toupper(int c)
 {
-	int	sign;
-	int	result;
-
-	sign = 1;
-	result = 0;
-	while (*nptr == '\t' || *nptr == '\r' || *nptr == ' ' || *nptr == '\n')
-		nptr++;
-	if (*nptr == '+' || *nptr == '-')
-		if (*nptr++ == '-')
-			sign *= -1;
-	while (*nptr >= '0' && *nptr <= '9')
-	{
-		result = (*nptr - '0') + (result * 10);
-		nptr++;
-	}
-	return (result * sign);
+	if (c >= 97 && c <= 122)
+		c -= 32;
+	return (c);
 }
+
