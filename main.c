@@ -225,12 +225,39 @@ int main(void)
 
 test ft to upper
 #include <stdio.h>
+int main(void)#include <stdio.h>
 int main(void)
+{
+	char string[] = "teste";
+	
+	printf("%s\n", string);
+	ft_bzero(string, 1);
+	printf("%s\n", string);	
+}
 {
 	printf("%c\n", ft_toupper('a'));
 	return (0);
 }
 
 /**/
+/* 
+#include <stdio.h>
+int main(void)
+{
+	char string[] = "teste";
+	
+	printf("%s\n", string);
+	ft_bzero(string, 1);
+	printf("%s\n", string);	
+}
+ */
+
+/* #include <stdio.h>
+int main(void)
+{
+	char string[] = "teste";
+	printf("%s\n", string);
+	printf("%s\n", ft_memset(string, 'O', 2));	
+} */
 
 }
