@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-//test ft_isalpha
+/* //test ft_isalpha
 int main(void)
 {
 	int a = 'A';
@@ -22,7 +22,7 @@ int main(void)
 	int m = '}';
 	int n = ']';
 	int o = '+';
-	
+	 */
 	/* printf("ft_isalpha\n");
 	printf("%d\n", ft_isalpha(a));
 	printf("%d\n", ft_isalpha(b));
@@ -260,4 +260,26 @@ int main(void)
 	printf("%s\n", ft_memset(string, 'O', 2));	
 } */
 
+/* 
+#include <stdio.h>
+#include <string.h>
+int main(void)
+{
+	char copy[] = "source";
+	char dest_copy[] = "destiny";
+	char move[] = "source";
+	char dest_move[] = "destiny";
+	
+	printf("%s\n", copy);
+	printf("%s\n", dest_copy);
+	memcpy(dest_copy, copy, 11);
+	printf("%s\n", copy);
+	printf("%s\n", dest_copy);
+
+	printf("%s\n", move);
+	printf("%s\n", dest_move);
+	memmove(dest_move, move, 11);
+	printf("%s\n", move);
+	printf("%s\n", dest_move);
 }
+ */
