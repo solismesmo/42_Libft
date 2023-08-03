@@ -283,3 +283,14 @@ int main(void)
 	printf("%s\n", dest_move);
 }
  */
+/* 
+#include <stdio.h>
+#include <string.h>
+int main(void)
+{
+	char str1[] = "alo";
+	char str2[] = "aloHa";
+	
+	printf ("%d\n", ft_memcmp(str1, str2, 2));
+	printf ("%d\n", memcmp(str1, str2, 2));
+} */
