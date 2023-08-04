@@ -294,3 +294,21 @@ int main(void)
 	printf ("%d\n", ft_memcmp(str1, str2, 2));
 	printf ("%d\n", memcmp(str1, str2, 2));
 } */
+
+//#include <stdio.h>
+/* #include <string.h>
+
+int main () {
+   const char str[] = "https://www.tutorialspoint.com";
+   const char ch = '8';
+   char *original;
+   char *mine;
+
+   original = memchr(str, ch, strlen(str));
+   mine = ft_memchr(str, ch, strlen(str));
+
+   printf("String after |%s|\n", original);
+   printf("String after |%s|\n", mine);
+   return (0);
+
+} */
