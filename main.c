@@ -312,3 +312,29 @@ int main () {
    return (0);
 
 } */
+
+//teste rob strlcat
+/* int main(void)
+{
+    char dest[20] = "12345ab";
+    char src[20] = "67890";
+    
+    printf("Original:\n");
+    printf("before dest: %s\n", dest);
+    printf("before src: %s\n", src);
+    strlcat(dest,src,10);
+    printf("after dest: %s\n", dest);
+    printf("after src: %s\n", src);
+    printf("\n");
+
+    char ft_dest[20] = "12345ab";
+    char ft_src[20] = "67890";
+    
+    printf("ft_strlcat:\n");
+    printf("before dest: %s\n", ft_dest);
+    printf("before src: %s\n", ft_src);
+    ft_strlcat(ft_dest, ft_src, 10);
+    printf("after ft_dest: %s\n", ft_dest);
+    printf("after ft_src: %s\n", ft_src);
+    printf("\n");
+} */
