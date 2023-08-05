@@ -338,3 +338,52 @@ int main () {
     printf("after ft_src: %s\n", ft_src);
     printf("\n");
 } */
+
+//test STRLCAT
+/* #include <bsd/string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int	main(void)
+{
+	char source[] = "source";
+	char dest[] = "dest";
+	
+
+/* 	char *source;
+	char *dest;
+
+	source = malloc(sizeof(char)* 7);
+	dest = malloc(sizeof(char)* 20);
+
+	source = "source";
+	dest = "dest"; 
+	printf("%s\n", source);
+	printf("%s\n", dest);
+	printf("%zu\n", strlcat(dest, source, 3));
+	printf("%zu\n", ft_strlcat(dest, source, 3));
+	printf("%s\n", source);
+	printf("%s\n", dest);
+	return (0);
+}
+ 
+
+//teste strlcpy
+#include <bsd/string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(void)
+{
+	char src[6] = "costa";
+	char dst[7] = "lisley";
+	
+	printf("%s\n", src);
+	printf("%s\n", dst);
+	printf("%zu\n", ft_strlcpy(dst, src, 4));
+	printf("%zu\n", strlcpy(dst, src, 4));
+	printf("%s\n", src);
+	printf("%s\n", dst);
+	return (0);
+}
