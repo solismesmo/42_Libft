@@ -339,8 +339,8 @@ int main () {
     printf("\n");
 } */
 
-//test STRLCAT
-/* #include <bsd/string.h>
+/* //test STRLCAT
+#include <bsd/string.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -351,7 +351,7 @@ int	main(void)
 	char dest[] = "dest";
 	
 
-/* 	char *source;
+ 	char *source;
 	char *dest;
 
 	source = malloc(sizeof(char)* 7);
@@ -387,3 +387,74 @@ int main(void)
 	printf("%s\n", dst);
 	return (0);
 }
+ */
+
+//teste strchr
+/* #include <stdio.h>
+#include <string.h>
+int main () 
+{
+	char str[] = "https://www.helloworld.com";
+	char str1[] = "?^^**#$)))";
+	char str2[] = "1234567-1";
+	char str3[] = "oi tudo bem?";
+	char str4[] = "\0";
+	char ch = '.';
+	char ch1 = '*';
+	char ch2 = '5';
+	char ch3 = ' ';
+	char ch4 = '\0';
+	
+	char *original;
+	char *original1;
+	char *original2;
+	char *original3;
+	char *original4;
+	char *original5;
+	char *mine;
+	char *mine1;
+	char *mine2;
+	char *mine3;
+	char *mine4;
+	char *mine5;
+	
+	printf("%c\n", ch);
+	printf("%c\n", ch1);
+	printf("%c\n", ch2);
+	printf("%c\n", ch3);
+	printf("%c\n", ch4);
+	printf("%s\n", str);
+	printf("%s\n", str1);
+	printf("%s\n", str2);
+	printf("%s\n", str3);
+	printf("%s\n", str4);
+	
+	original = strchr(str, ch);
+	original1 = strchr(str1, ch1);
+	original2 = strchr(str2, ch2);
+	original3 = strchr(str3, ch3);
+	original4 = strchr(str4, ch4);
+	original5 = strchr(str3, ch2);
+	printf("%s\n", original);
+	printf("%s\n", original1);
+	printf("%s\n", original2);
+	printf("%s\n", original3);
+	printf("%s\n", original4);
+	printf("%s\n", original5);
+
+	
+	mine = ft_strchr(str,ch);
+	mine1 = ft_strchr(str1,ch1);
+	mine2 = ft_strchr(str2,ch2);
+	mine3 = ft_strchr(str3,ch3);
+	mine4 = ft_strchr(str4,ch4);
+	mine5 = ft_strchr(str3, ch2);
+	printf("%s\n", mine);
+	printf("%s\n", mine1);
+	printf("%s\n", mine2);
+	printf("%s\n", mine3);
+	printf("%s\n", mine4);
+	printf("%s\n", mine5);
+
+	return(0);
+} */
