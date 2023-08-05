@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/27 18:42:58 by livieira          #+#    #+#             */
-/*   Updated: 2023/08/04 22:51:21 by livieira         ###   ########.fr       */
+/*   Created: 2023/08/05 00:06:46 by livieira          #+#    #+#             */
+/*   Updated: 2023/08/05 00:07:07 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dest_size)
 {
-	int	count;
-
-	count = 0;
-	while (*s)
-	{
-		count++;
-		s++;
-	}	
-	return (count);
+	
 }
