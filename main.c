@@ -1,9 +1,9 @@
-#include <stdio.h>
+/* #include <stdio.h>
 #include <ctype.h>
 #include "libft.h"
 #include <stdlib.h>
 #include <string.h>
-
+ */
 /* //test ft_isalpha
 int main(void)
 {
