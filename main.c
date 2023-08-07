@@ -458,3 +458,61 @@ int main ()
 
 	return(0);
 } */
+
+
+/* teste strncmp
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(void)
+{
+    char str1[] = "stringum";
+    char str2[] = "string2";
+    char str3[] = " ";
+    char str4[] = "\0";
+    char str5[] = "-098967";
+
+    int original;
+    int original1;
+    int original2;
+    int original3;
+    int original4;
+    int mine;
+    int mine1;
+    int mine2;
+    int mine3;
+    int mine4;
+
+    original = strncmp(str1, str2, 6);
+    mine = ft_strncmp(str1, str2, 6);
+
+    original1 = strncmp(str2, str5, 3);
+    mine1 = ft_strncmp(str2, str5, 3);
+
+    original2 = strncmp(str3, str4, 1);
+    mine2 = ft_strncmp(str3, str4, 1);
+
+    original3 = strncmp(str1, str2, 3);
+    mine3 = ft_strncmp(str1, str2, 3);
+
+    original4 = strncmp(str1, str5, 3);
+    mine4 = ft_strncmp(str1, str5, 3);
+
+    printf("Test original x mine: \n");
+    printf("%d\n", original);
+    printf("%d\n", mine);
+    printf("Test original1 x mine1: \n");
+    printf("%d\n", original1);
+    printf("%d\n", mine1);
+    printf("Test original2 x mine2: \n");
+    printf("%d\n", original2);
+    printf("%d\n", mine2);
+    printf("Test original3 x mine3: \n");
+    printf("%d\n", original3);
+    printf("%d\n", mine3);
+    printf("Test original4 x mine4: \n");
+    printf("%d\n", original4);
+    printf("%d\n", mine4);
+
+}
+*/
