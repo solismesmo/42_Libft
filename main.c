@@ -671,3 +671,15 @@ int main () {
    
    return(0);
 } */
+
+//teste PUTNBR_FD
+/* #include <stdio.h>
+int main()
+{
+	int n;
+	
+	n = 1234;
+	
+	ft_putnbr_fd(n, 1);
+
+} */
