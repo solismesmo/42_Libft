@@ -571,3 +571,29 @@ int main(void)
     printf("%d\n", mine4);
 
 } */
+
+
+//teste ft_strnstr
+/* #include <bsd/string.h>
+#include <stdio.h>
+#include <stdlib.h>
+int	main(void)
+{
+	char	*haystack;
+	char	*needle;
+	char	*ptr;
+
+	haystack = "Foo Bar Baz";
+	needle = " ";
+
+	ptr = strnstr(haystack, needle, 6);	
+	printf("original: \n");
+	printf("%s\n", ptr);
+	
+
+	printf("mine: \n");
+	ptr = ft_strnstr(haystack, needle, 6);
+	printf("%s\n", ptr);
+	
+	return (0);
+} */
