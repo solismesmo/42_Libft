@@ -6,7 +6,7 @@
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/07 22:51:24 by livieira          #+#    #+#             */
-/*   Updated: 2023/08/08 01:09:23 by livieira         ###   ########.fr       */
+/*   Updated: 2023/08/08 01:12:19 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	memory = NULL;
 	temp = nmemb * size;
-	
+
 	if (!nmemb || !size || nmemb == temp / size)
 		memory = malloc(temp);
 	if (temp)
