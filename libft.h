@@ -6,7 +6,7 @@
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 18:51:24 by livieira          #+#    #+#             */
-/*   Updated: 2023/08/04 19:58:17 by livieira         ###   ########.fr       */
+/*   Updated: 2023/08/08 00:10:59 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int		ft_atoi(const char *nptr);
 char	*ft_itoa(int n);
 
 void	ft_bzero(void *s, size_t n);
-void	ft_calloc(size_t nmemb, size_t size);
+void	*ft_calloc(size_t nmemb, size_t size);
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
