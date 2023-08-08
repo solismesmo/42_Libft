@@ -658,3 +658,16 @@ int main()
 	}
 	return 0;
 } */
+
+//teste PUTCHAR_FD
+/* #include <stdio.h>
+
+int main () {
+   char ch;
+
+   for(ch = 'A' ; ch <= 'Z' ; ch++) {
+      ft_putchar_fd(ch, 2);
+   }
+   
+   return(0);
+} */
