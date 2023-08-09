@@ -683,3 +683,93 @@ int main()
 	ft_putnbr_fd(n, 1);
 
 } */
+
+/* #include <stdio.h>
+#include <string.h>
+int main () 
+{
+	char str[] = "https://www.helloworld.com";
+	char str1[] = "?^^**#$)))";
+	char str2[] = "1234567-1";
+	char str3[] = "oi tudo bem?";
+	char str4[] = "\0";
+	char ch = '.';
+	char ch1 = '*';
+	char ch2 = '5';
+	char ch3 = ' ';
+	char ch4 = '\0';
+	
+	char *original;
+	char *original1;
+	char *original2;
+	char *original3;
+	char *original4;
+	char *original5;
+	char *mine;
+	char *mine1;
+	char *mine2;
+	char *mine3;
+	char *mine4;
+	char *mine5;
+	printf("char que procuro: \n");
+	printf("%c\n", ch);
+	printf("%c\n", ch1);
+	printf("%c\n", ch2);
+	printf("%c\n", ch3);
+	printf("%c\n", ch4);
+	printf("strings que eu tenho: \n");
+	printf("%s\n", str);
+	printf("%s\n", str1);
+	printf("%s\n", str2);
+	printf("%s\n", str3);
+	printf("%s\n", str4);
+	
+	original = strrchr(str, ch);
+	original1 = strrchr(str1, ch1);
+	original2 = strrchr(str2, ch2);
+	original3 = strrchr(str3, ch3);
+	original4 = strrchr(str4, ch4);
+	original5 = strrchr(str3, ch2);
+	printf("resultado original: \n");
+	printf("%s\n", original);
+	printf("%s\n", original1);
+	printf("%s\n", original2);
+	printf("%s\n", original3);
+	printf("%s\n", original4);
+	printf("%s\n", original5);
+
+	
+	mine = ft_strrchr(str,ch);
+	mine1 = ft_strrchr(str1,ch1);
+	mine2 = ft_strrchr(str2,ch2);
+	mine3 = ft_strrchr(str3,ch3);
+	mine4 = ft_strrchr(str4,ch4);
+	mine5 = ft_strrchr(str3, ch2);
+	printf("resultado minha: \n");
+	printf("%s\n", mine);
+	printf("%s\n", mine1);
+	printf("%s\n", mine2);
+	printf("%s\n", mine3);
+	printf("%s\n", mine4);
+	printf("%s\n", mine5);
+
+	return(0);
+} */
+
+
+//teste SUBSTR
+/* #include <string.h>
+#include <stdio.h>
+int main()
+{
+	char string[] = "abcdef";
+	char *sub_str;
+	
+	printf("String is 'abcdef', start 2 and len 3: \n");
+	sub_str = ft_substr(string, 2, 3);
+	printf("%s\n", sub_str);
+	printf("String is 'abcdef', start 8 and len 3: \n");
+	sub_str = ft_substr(string, 8, 3);
+	printf("%s\n", sub_str);
+}
+ */

@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/05 05:16:08 by livieira          #+#    #+#             */
-/*   Updated: 2023/08/09 02:57:09 by livieira         ###   ########.fr       */
+/*   Created: 2023/08/09 00:04:16 by livieira          #+#    #+#             */
+/*   Updated: 2023/08/09 02:56:14 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int	length;
+	char	*substring;
+	size_t	len_s;
+	size_t	i;
 
-	length = ft_strlen(s);
-	while (length >= 0)
-	{
-		if (s[length] == (unsigned char) c)
-			return ((char *) s + length);
-		length--;
-	}
-	return (NULL);
+	len_s = ft_strlen(s);
+	if (start >= len_s)
+		return (NULL);
+	if (len_s - start < len)
+		len = len_s - start;
+	substring = malloc((len + 1) * sizeof(char));
+	if (substring == NULL)
+		return (NULL);
+	i = -1;
+	while (s[++i + start] && (i < len))
+		substring[i] = s[start + i];
+	substring[len] = '\0';
+	return (substring);
 }
