@@ -6,7 +6,7 @@
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 18:51:24 by livieira          #+#    #+#             */
-/*   Updated: 2023/08/08 00:10:59 by livieira         ###   ########.fr       */
+/*   Updated: 2023/08/08 23:46:45 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dest_size);
 size_t	ft_strlen(const char *s);
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
