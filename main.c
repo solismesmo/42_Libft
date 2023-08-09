@@ -773,3 +773,20 @@ int main()
 	printf("%s\n", sub_str);
 }
  */
+
+
+/* #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void)
+{
+	char str1[] = "ovicsbeac ** . ~";
+	char str2[] = "nvdu ciwhocu";
+	char *fun;
+
+	fun = ft_strjoin(str1, str2);
+	printf("%s\n", fun);
+	
+}
+ */
