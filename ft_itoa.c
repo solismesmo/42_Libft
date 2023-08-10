@@ -6,7 +6,7 @@
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 21:29:36 by livieira          #+#    #+#             */
-/*   Updated: 2023/07/27 01:12:51 by livieira         ###   ########.fr       */
+/*   Updated: 2023/08/10 05:44:11 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_itoa(int n)
 	if (negative == 1)
 		number *= -1;
 	digits = ft_count(number);
-	result = (char *)malloc(digits + negative +1);
+	result = (char *)malloc(digits + negative + 1);
 	if (result == NULL)
 		return (NULL);
 	if (negative == 1)
