@@ -6,7 +6,7 @@
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 18:55:54 by livieira          #+#    #+#             */
-/*   Updated: 2023/08/02 20:19:54 by livieira         ###   ########.fr       */
+/*   Updated: 2023/08/10 06:38:28 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned int	i;
 
-	if (!(dest && src))
+	if (!(dest || src))
 		return (NULL);
 	if (dest < src)
 	{

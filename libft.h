@@ -6,7 +6,7 @@
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 18:51:24 by livieira          #+#    #+#             */
-/*   Updated: 2023/08/08 23:46:45 by livieira         ###   ########.fr       */
+/*   Updated: 2023/08/10 06:12:30 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <stddef.h>
 
 //mandatory functions
 int		ft_atoi(const char *nptr);

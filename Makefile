@@ -1,5 +1,5 @@
-NAME 		= libft.a
-SOURCES 	= ft_atoi.c \
+NAME 		:= libft.a
+SOURCES 	:= ft_atoi.c \
 			ft_bzero.c \
 			ft_calloc.c \
 			ft_isalnum.c \
@@ -17,7 +17,6 @@ SOURCES 	= ft_atoi.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c \
 			ft_putstr_fd.c \
-			ft_split.c \
 			ft_strchr.c \
 			ft_strdup.c \
 			ft_strjoin.c \
@@ -31,16 +30,20 @@ SOURCES 	= ft_atoi.c \
 			ft_strtrim.c \
 			ft_substr.c \
 			ft_tolower.c \
-			ft_toupper.c 
-OBJECTS 	= ${SOURCES:.c=.o}
-CC 			= gcc
-RM          = rm -f
-CFLAGS		= -Wall -Wextra -Werror
+			ft_toupper.c \
+			ft_striteri.c \
+			ft_split.c 
 
-all: $(NAME)
+OBJECTS 	:= ${SOURCES:.c=.o}
+CC 			:= cc
+RM			:= rm -f
+CFLAGS		:= -Wall -Wextra -Werror
+AR			:= ar -rcs
+
+all: ${NAME}
 
 $(NAME): ${OBJECTS}
-			ar -rcs $(NAME) $(OBJECTS)
+			${AR} ${NAME} ${OBJECTS}
 
 %.o:%.c
 			${CC} ${CFLAGS} -c $< -o $@

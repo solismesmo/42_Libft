@@ -1,8 +1,15 @@
+#include "libft.h"
+#include <stdlib.h>
+#include <unistd.h>
+
+
+
 /* #include <stdio.h>
 #include <ctype.h>
 #include "libft.h"
 #include <stdlib.h>
 #include <string.h>
+
  */
 /* //test ft_isalpha
 int main(void)
@@ -239,8 +246,8 @@ int main(void)
 	return (0);
 }
 
-/**/
-/* 
+
+
 #include <stdio.h>
 int main(void)
 {
@@ -250,9 +257,9 @@ int main(void)
 	ft_bzero(string, 1);
 	printf("%s\n", string);	
 }
- */
 
-/* #include <stdio.h>
+//memset test
+#include <stdio.h>
 int main(void)
 {
 	char string[] = "teste";
@@ -260,29 +267,31 @@ int main(void)
 	printf("%s\n", ft_memset(string, 'O', 2));	
 } */
 
-/* 
+
 #include <stdio.h>
 #include <string.h>
 int main(void)
 {
 	char copy[] = "source";
 	char dest_copy[] = "destiny";
-	char move[] = "source";
-	char dest_move[] = "destiny";
+	/* char move[] = "source";
+	char dest_move[] = "destiny"; */
 	
 	printf("%s\n", copy);
 	printf("%s\n", dest_copy);
-	memcpy(dest_copy, copy, 11);
+
+	memcpy("\0", "\0", 8);
+	
 	printf("%s\n", copy);
 	printf("%s\n", dest_copy);
 
-	printf("%s\n", move);
+	/* printf("%s\n", move);
 	printf("%s\n", dest_move);
 	memmove(dest_move, move, 11);
 	printf("%s\n", move);
-	printf("%s\n", dest_move);
+	printf("%s\n", dest_move); */
 }
- */
+
 /* 
 #include <stdio.h>
 #include <string.h>

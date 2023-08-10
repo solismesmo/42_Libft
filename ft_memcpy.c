@@ -6,7 +6,7 @@
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 18:34:45 by livieira          #+#    #+#             */
-/*   Updated: 2023/08/02 20:15:45 by livieira         ###   ########.fr       */
+/*   Updated: 2023/08/10 09:17:11 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned int	i;
 
-	if (!(dest && src))
+	if (!(dest || src))
 		return (NULL);
 	i = 0;
 	while (i < n)

@@ -6,7 +6,7 @@
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/07 19:02:01 by livieira          #+#    #+#             */
-/*   Updated: 2023/08/08 04:47:04 by livieira         ###   ########.fr       */
+/*   Updated: 2023/08/10 05:50:36 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,5 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		}
 		i++;
 	}
+	return (NULL);
 }
