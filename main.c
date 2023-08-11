@@ -322,8 +322,10 @@ int main () {
 
 } */
 
-//teste rob strlcat
-/* int main(void)
+//teste STRLCAT~~~~~~~~~~~~~~~~~~~~~~ strlcat
+/* #include <bsd/string.h>
+#include <stdio.h>
+int main(void)
 {
     char dest[20] = "12345ab";
     char src[20] = "67890";
@@ -346,7 +348,7 @@ int main () {
     printf("after ft_dest: %s\n", ft_dest);
     printf("after ft_src: %s\n", ft_src);
     printf("\n");
-} */
+}  */
 
 /* //test STRLCAT
 #include <bsd/string.h>
