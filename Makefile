@@ -32,7 +32,7 @@ SOURCES 	:= ft_atoi.c \
 			ft_tolower.c \
 			ft_toupper.c \
 			ft_striteri.c \
-			ft_split.c 
+			ft_split.c
 
 OBJECTS 	:= ${SOURCES:.c=.o}
 CC 			:= cc
