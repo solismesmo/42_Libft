@@ -6,12 +6,11 @@
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/11 06:27:44 by livieira          #+#    #+#             */
-/*   Updated: 2023/08/12 13:18:42 by livieira         ###   ########.fr       */
+/*   Updated: 2023/08/16 20:12:10 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	ft_count_words(char const *s, char c)
 {
