@@ -55,9 +55,11 @@ all: ${NAME}
 
 $(NAME): 	${OBJECTS}
 
-bonus: 		${OBJECTS_BONUS}
-
 			${AR} ${NAME} ${OBJECTS}
+
+bonus: 		${NAME} ${OBJECTS_BONUS}
+
+			${AR} ${NAME} ${OBJECTS_BONUS}
 
 %.o:%.c
 			${CC} ${CFLAGS} -c $< -o $@
