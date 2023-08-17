@@ -6,7 +6,7 @@
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/07 22:51:24 by livieira          #+#    #+#             */
-/*   Updated: 2023/08/10 07:03:58 by livieira         ###   ########.fr       */
+/*   Updated: 2023/08/17 20:03:52 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void			*memory;
-	unsigned int	temp;
+	int				temp;
 
 	memory = NULL;
 	temp = nmemb * size;
