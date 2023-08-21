@@ -6,7 +6,7 @@
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 18:51:24 by livieira          #+#    #+#             */
-/*   Updated: 2023/08/12 20:01:26 by livieira         ###   ########.fr       */
+/*   Updated: 2023/08/21 20:15:04 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,10 @@ char		*ft_strtrim(char const *s1, char const *set);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 int			ft_tolower(int c);
 int			ft_toupper(int c);
+
+//added later
+int			ft_count_words(char const *s, char c);
+char		*ft_strncpy(char *dest, const char *src, size_t len);
+char		*ft_strndup(const char *s, size_t n);
 
 #endif
