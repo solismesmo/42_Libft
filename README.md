@@ -46,3 +46,5 @@ It is convenient to use functions that deal with memory and strings, but when wo
 typedef struct s_list { void *content; struct s_list *next; } t_list; The following functions were implemented and added to the library.
 
 ft_lstnew • ft_lstadd_front • ft_lstsize • ft_lstlast • ft_lstadd_back • ft_lstdelone • ft_lstclear • ft_lstiter • ft_lstmap
+# Added later
+ft_count_words • ft_strncpy • ft_strndup
