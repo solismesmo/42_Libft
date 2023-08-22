@@ -2,6 +2,7 @@ NAME 		:= libft.a
 SOURCES 	:= ft_atoi.c \
 			ft_bzero.c \
 			ft_calloc.c \
+			ft_isnegative.c \
 			ft_isalnum.c \
 			ft_isalpha.c \
 			ft_isascii.c \
@@ -34,6 +35,7 @@ SOURCES 	:= ft_atoi.c \
 			ft_striteri.c \
 			ft_split.c \
 			ft_count_words.c \
+			ft_count_digits.c \
 			ft_strncpy.c \
 			ft_strndup.c 
 

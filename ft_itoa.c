@@ -6,33 +6,11 @@
 /*   By: livieira <livieira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 21:29:36 by livieira          #+#    #+#             */
-/*   Updated: 2023/08/10 05:44:11 by livieira         ###   ########.fr       */
+/*   Updated: 2023/08/22 06:30:25 by livieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static size_t	ft_negative(int n)
-{
-	if (n < 0)
-		return (1);
-	return (0);
-}
-
-static size_t	ft_count(size_t n)
-{
-	unsigned int	digits;
-
-	if (n == 0)
-		return (1);
-	digits = 0;
-	while (n > 0)
-	{
-		digits++;
-		n /= 10;
-	}
-	return (digits);
-}
 
 char	*ft_itoa(int n)
 {
@@ -41,11 +19,11 @@ char	*ft_itoa(int n)
 	long int		number;
 	unsigned int	digits;
 
-	negative = ft_negative(n);
+	negative = ft_isnegative(n);
 	number = n;
 	if (negative == 1)
 		number *= -1;
-	digits = ft_count(number);
+	digits = ft_count_digits(number);
 	result = (char *)malloc(digits + negative + 1);
 	if (result == NULL)
 		return (NULL);
