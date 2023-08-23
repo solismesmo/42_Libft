@@ -47,4 +47,4 @@ typedef struct s_list { void *content; struct s_list *next; } t_list; The follow
 
 ft_lstnew • ft_lstadd_front • ft_lstsize • ft_lstlast • ft_lstadd_back • ft_lstdelone • ft_lstclear • ft_lstiter • ft_lstmap
 # 4. Added later
-ft_count_words • ft_strncpy • ft_strndup
+ft_count_words • ft_count_digits • ft_strndup • ft_strncpy • ft_isnegative
